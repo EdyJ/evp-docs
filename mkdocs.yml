@@ -1,0 +1,14 @@
+site_name: Edy's Vehicle Physics
+theme_dir: 'custom_theme'
+theme: mkdocs
+markdown_extensions: ['extra', 'admonition', 'mathjax', 'iconfonts(base=fa,prefix=fa-)']
+
+extra_css: ['css/tables.css','css/admonitions.css','css/fixes.css','css/extras.css']
+extra_javascript: ['https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML','js/mathjaxhelper.js','js/fabric.custom.min.js','js/texturecanvas.js','js/analytics.js']
+
+repo_url: https://github.com/EdyJ/evp-docs
+
+pages:
+- ['index.md', 'Vehicle Physics Pro online documentation']
+
+- ['markdown-test.md', 'User Guide', 'Markdown test page']
