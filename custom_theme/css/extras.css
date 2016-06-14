@@ -1,7 +1,4 @@
 
-
-
-
 /* Nicer font for code samples */
 
 /*
@@ -12,12 +9,6 @@ code, kbd, pre, samp
 	}
 */
 
-/* H5 in bold */
-
-h5, .h5
-	{
-	font-weight: bold;
-	}
 
 /* Formatting for kbd items (keyboard shortcuts) */
 
@@ -50,18 +41,48 @@ canvas
 
 img
 	{
-	display: block;
-	margin: 20px auto;
-	max-width: 93%;
-	height: auto;
+	/*height: auto; 		   Seems not to be necessary */
+
+	display: block;			/* For centered */
+	margin: 20px auto;		/* For centered */
+	max-width: 100%;		/* For responsive */
 	}
 
+iframe
+	{
+	/* Centered iframe */
+
+	display: block;
+	margin: 20px auto;
+	}
+
+
+img.img-large
+	{
+	max-width: 600px;
+	}
 
 img.img-medium
 	{
-	width: 520px;
+	max-width: 520px;
 	}
 
+img.img-small
+	{
+	max-width: 320px;
+	}
+
+img.img-thumb
+	{
+	max-width: 120px;
+	}
+
+/* thumbs inside table cells redefine the vertical margin */
+
+td img.img-thumb
+	{
+	margin: 2px auto;
+	}
 
 
 /* Nicely formatted centered title and subtitle */
@@ -73,7 +94,7 @@ h1.title
     font-weight: 300;
 	}
 
-p.title
+p.centered
 	{
     text-align: center;
 	}
