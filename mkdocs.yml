@@ -23,4 +23,14 @@ markdown_extensions:
 pages:
 - "&#8201;": index.md
 - User Guide:
-  - Markdown test page: markdown-test.md
+  - Getting Started: user-guide/getting-started.md
+  - Rigging vehicles: user-guide/rigging-vehicles.md
+  - Using vehicles in your project: user-guide/using-vehicles.md
+  - Building scenes with vehicles: user-guide/building-scenes.md
+  - Markdown test page: test/markdown-test.md
+- Components:
+  - Vehicle: components/vehicle.md
+  - Camera: components/camera.md
+  - Ground Materials: components/ground-materials.md
+  - Other: components/other.md
+- FAQ / How To: faq.md
