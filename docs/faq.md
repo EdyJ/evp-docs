@@ -44,20 +44,29 @@ A prefab **Sport Coupe Drift** is included. The key settings for configuring the
 are:
 
 - _Center Of Mass position_: slightly biased towards front, 0.55 - 0.60
-- Large _Max Steer Angle_: 45-50 degrees
+- Large _Max Steer Angle_: 45 - 50 degrees
 - Either rear drive wheels, or all wheel drive balanced 95% rear and 5% front (_Drive Balance_)
 - Large _Max Drive Force_: around 5x the mass of the car (i.e. 5000 for a 1000 Kg car)
-- Large _Max Drive Slip_: 11-13. **This is the key value for configuring _more_ or _less_ drifting**.
+- Large _Max Drive Slip_: 11 - 13<br>**Max Drive Slip is a key value for configuring _more_ or _less_ drifting**.
 - _Handling Bias_: slightly oversteer, +5 - 10%
 - _Traction Control_: disabled
-- _Steering Assist_: enabled, 0.6 - 0.8
+- _Steering Assist_: enabled, 0.6 - 0.8<br>**Steering Assist is a key value for configuring the handling while drifting**.
 
 #### How to match real-world cars
 
-Edy's Vehicle Physics (EVP) is designed to allow configuring the vehicle's behavior with a few
-parameters. These parameters don't have a correspondence with real world parameters.
+You can configure the vehicles in EVP to resemble the _feeling_ and behavior of actual cars, but
+not to perform an accurate simulation of a specific car. The parameters in EVP are designed for
+configuring the vehicle behavior easily and don't have a correspondence with the real world's
+settings.
 
-You can configure the vehicles in EVP to resemble the _feeling_ and behavior of actual cars.
+	If you need to match the specifications of real cars accurately then you should take a look at
+	[Vehicle Physics Pro](http://vehiclephysics.com). VPP is specifically designed to use real-world
+	specifications and simulate the actual behaviors of the cars based on their realistic setup.
+
+A good method is starting with one of the included prefabs. Choose the one that is most similar to
+the vehicle you want to resemble. Then carefully configure its parameters in order to fine tune the
+handling and behavior.
+
 Some hints:
 
 Suspension and height of the center of mass
@@ -67,17 +76,17 @@ Suspension and height of the center of mass
 
 Engine force and shape
 :	More Max Drive Force and higher Force Curve Shape for high-acceleration sports cars. Less drive
-	force and lower curve shapes for real street cars.
+	force and lower curve shapes for regular street cars.
 
-Max Speed Forward, Aerodynamic Drag, Rolling Friction
+Max Speed Forward, Aerodynamic Drag
 :	The combination of these define the final top speed on flat road.
 
 Vehicle Balance
 :	These settings define how the parameters are balanced among front and rear wheels. They may be
 	used for compensating or enforcing certain behaviors on specific situations (example: move the
-	brake balance to the rear wheels for enforcing oversteer on braking).
+	brake balance to the rear wheels for enforcing over-steer on braking).
 
-These parameters affect the handling and behavior:
+These parameters affect the handling and behavior in different situations:
 
 - Accelerating and burnouts: Max Drive Slip, Drive Force To Max Slip, Traction Control, Drive
 	Balance.
@@ -88,13 +97,3 @@ These parameters affect the handling and behavior:
 The longitudinal position of the center of mass has great influence on the handling and behavior as
 well. A good practice is to ensure the suspension to be properly configured according to the weight
 distribution as for the the CoM position (i.e. stiffer springs where more weight is supported).
-
-You can also start with one of the included prefabs. Choose the one that is most similar to the
-vehicle you want to resemble. Then carefully configure the parameters in order to fine tune the
-handling and behavior.
-
-If you need to match the specifications of real cars accurately, then you should take a look at
-[Vehicle Physics Pro](http://vehiclephysics.com). VPP is specifically designed to use real-world
-specifications and simulate the actual behaviors of the cars based on their realistic setup.
-
----
