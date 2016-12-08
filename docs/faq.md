@@ -97,3 +97,51 @@ These parameters affect the handling and behavior in different situations:
 The longitudinal position of the center of mass has great influence on the handling and behavior as
 well. A good practice is to ensure the suspension to be properly configured according to the weight
 distribution as for the the CoM position (i.e. stiffer springs where more weight is supported).
+
+#### Which parameter(s) affect each vehicle aspect?
+
+Top speed
+:	- Max Speed Forward
+	- Aerodynamic Drag
+
+Acceleration
+:	- Max Drive Force
+	- Force Curve Shape
+	- Aerodynamic Drag
+	- Tire Friction (transmits Max Drive Force to the wheels)
+	- Aided by Traction Control
+
+Brake power
+:	- Max Brake Force
+	- Tire Friction (Max Brake Force to the wheels)
+	- Aided by Brake Assist
+	- Balanced by Brake Balance
+
+Handling
+:	- All parameters at "Vehicle Balance"
+	- All parameters at "Driving Aids"
+	- Max Drive Slip
+	- Drive Force To Max Slip
+
+
+## Problem resolution
+
+#### The car jumps uncontrollably or shakes at rest
+
+Watch the damper values at the WheelColliders and/or the mass of the vehicle rigidbody.
+
+#### Impacts cause a noticeable lag
+
+Remove the colliders from the _Deform Colliders_ list. Deforming the colliders is an expensive
+operation as the convex hulls are recomputed.
+
+#### Scaled vehicles don't work correctly
+
+Scaling vehicles can cause unpredictable issues due to how physics are handled in Unity. Thus,
+scales other than 1 in the Rigidbody and WheelColliders (including their parent GameObjects) are not
+supported and are indeed strongly discouraged.
+
+You may scale the mesh GameObjects only. As long as the Tigidbody and the WheelColliders receive a
+final scale of 1, then the vehicles will work as expected. If you scale the meshes, then you should
+modify the WheelColliders to accommodate the new positions and wheel dimensions (radius, suspension
+length).
