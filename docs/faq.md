@@ -6,6 +6,12 @@ answering the same question again :)
 
 [TOC]
 
+#### How to configure the Input parameters
+
+I recommend to use these settings for Horizontal and Vertical axes:
+
+![Edy's Vehicle Physics input axes](/img/input-axes-setup.png)
+
 #### How to control the vehicle from scripting
 
 Write a custom input script that gets a reference to the VehicleController component, then modify
@@ -123,6 +129,9 @@ Handling
 	- Max Drive Slip
 	- Drive Force To Max Slip
 
+Car stopping distance with no user input applied
+:	- Rolling Resistance
+	- Aerodynamic Drag (very small effect)
 
 ## Problem resolution
 
@@ -141,7 +150,7 @@ Scaling vehicles can cause unpredictable issues due to how physics are handled i
 scales other than 1 in the Rigidbody and WheelColliders (including their parent GameObjects) are not
 supported and are indeed strongly discouraged.
 
-You may scale the mesh GameObjects only. As long as the Tigidbody and the WheelColliders receive a
+You may scale the mesh GameObjects only. As long as the Rigidbody and the WheelColliders receive a
 final scale of 1, then the vehicles will work as expected. If you scale the meshes, then you should
 modify the WheelColliders to accommodate the new positions and wheel dimensions (radius, suspension
 length).
