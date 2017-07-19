@@ -65,13 +65,14 @@ not to perform an accurate simulation of a specific car. The parameters in EVP a
 configuring the vehicle behavior easily and don't have a correspondence with the real world's
 settings.
 
-	If you need to match the specifications of real cars accurately then you should take a look at
-	[Vehicle Physics Pro](http://vehiclephysics.com). VPP is specifically designed to use real-world
-	specifications and simulate the actual behaviors of the cars based on their realistic setup.
-
 A good method is starting with one of the included prefabs. Choose the one that is most similar to
 the vehicle you want to resemble. Then carefully configure its parameters in order to fine tune the
 handling and behavior.
+
+&fa-info-circle:lg; If you need to match the specifications of real cars accurately then take a look
+at [Vehicle Physics Pro](http://vehiclephysics.com). VPP is specifically designed to use real-world
+specifications and simulate the actual behaviors of the cars based on their realistic setup.
+{: .alert .alert-success }
 
 Some hints:
 
@@ -92,30 +93,40 @@ Vehicle Balance
 	used for compensating or enforcing certain behaviors on specific situations (example: move the
 	brake balance to the rear wheels for enforcing over-steer on braking).
 
-These parameters affect the handling and behavior in different situations:
-
-- Accelerating and burnouts: Max Drive Slip, Drive Force To Max Slip, Traction Control, Drive
-	Balance.
-- Braking and brake locks: Max Brake Slip / Ratio, Brake Force To Max Slip, Brake Assist, Brake
-	Balance.
-- Steering: Max Steer Angle, Steering Limit, Steering Assist, Handling Bias.
-
-The longitudinal position of the center of mass has great influence on the handling and behavior as
-well. A good practice is to ensure the suspension to be properly configured according to the weight
-distribution as for the the CoM position (i.e. stiffer springs where more weight is supported).
+Position of the Center of Mass
+:	The longitudinal position of the center of mass has great influence on the handling and behavior
+	as well. A good practice is to ensure the suspension to be properly configured according to the
+	weight distribution as for the the CoM position (i.e. stiffer springs where more weight is
+	supported).
 
 #### Which parameter(s) affect each vehicle aspect?
+
+Most parameters affect each aspect in some way, but here is an useful guide:
 
 Top speed
 :	- Max Speed Forward
 	- Aerodynamic Drag
 
+Steering
+:	- Max Steer Angle
+	- Steering Limit reduces the angle with the speed
+	- Steering Assist automatically counter-steers for keeping the control
+	- Handling Bias tweaks the understeer / oversteer behavior
+
 Acceleration
 :	- Max Drive Force
 	- Force Curve Shape
 	- Aerodynamic Drag
-	- Tire Friction (transmits Max Drive Force to the wheels)
+	- Tire Friction transmits up to Max Drive Force to the wheels
 	- Aided by Traction Control
+
+Burnouts
+:	- Max Drive Force
+	- Max Drive Slip
+	- Drive Force To Max Slip
+	- Drive Balance configures the drive wheels
+	- Tire Friction transmits up to Max Drive Force to the wheels
+	- Traction Control should be disabled or with small value
 
 Brake power
 :	- Max Brake Force
@@ -123,11 +134,24 @@ Brake power
 	- Aided by Brake Assist
 	- Balanced by Brake Balance
 
+Brake locks
+:	- Max Brake Slip or Max Brake Ratio
+	- Brake Force To Max Slip
+	- Brake Balance
+	- Brake Assist should be disabled or with small value
+
 Handling
-:	- All parameters at "Vehicle Balance"
-	- All parameters at "Driving Aids"
+:	- All parameters in "Vehicle Balance"
+	- All parameters in "Driving Aids"
+	- Anti-roll
 	- Max Drive Slip
 	- Drive Force To Max Slip
+	- Center of Mass (Position and Height)
+
+Weight Transfer
+:	- Suspension dampers
+	- Anti-roll
+	- Height of Center of Mass
 
 Car stopping distance with no user input applied
 :	- Rolling Resistance
