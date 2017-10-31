@@ -106,6 +106,7 @@ Most parameters affect each aspect in some way, but here is an useful guide:
 Top speed
 :	- Max Speed Forward
 	- Aerodynamic Drag
+	- Ground Material's Drag
 
 Steering
 :	- Max Steer Angle
@@ -117,6 +118,7 @@ Acceleration
 :	- Max Drive Force
 	- Force Curve Shape
 	- Aerodynamic Drag
+	- Ground Material's Drag
 	- Tire Friction transmits up to Max Drive Force to the wheels
 	- Aided by Traction Control
 
@@ -156,6 +158,7 @@ Weight Transfer
 Car stopping distance with no user input applied
 :	- Rolling Resistance
 	- Aerodynamic Drag (very small effect)
+	- Ground Material's Drag
 
 ## Problem resolution
 
