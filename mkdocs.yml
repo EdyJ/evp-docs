@@ -2,14 +2,16 @@ site_name: Edy's Vehicle Physics
 site_description: Documentation for Edy's Vehicle Physics (EVP), an easy to use vehicle physics package for Unity 3D
 site_author: Angel "Edy" Garcia
 repo_url: https://github.com/EdyJ/evp-docs
-theme_dir: 'custom_theme'
-theme: mkdocs
 
 strict: true
 google_analytics: [ 'UA-58719504-2', 'auto' ]
 
+theme:
+    name: mkdocs
+    custom_dir: 'custom_theme'
+
 extra_css: [ 'css/tables.css', 'css/admonitions.css', 'css/fixes.css', 'css/extras.css', 'css/clickview.css' ]
-extra_javascript: [ 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML', 'js/mathjaxhelper.js', 'js/fabric.custom.min.js', 'js/texturecanvas.js', 'js/imagegallery.js', 'js/clickview.js' ]
+extra_javascript: [ 'http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML', 'js/mathjaxhelper.js', 'js/fabric.custom.min.js', 'js/texturecanvas.js', 'js/imagegallery.js', 'js/clickview.js' ]
 
 markdown_extensions:
   - extra
