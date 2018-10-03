@@ -160,6 +160,17 @@ Car stopping distance with no user input applied
 	- Aerodynamic Drag (very small effect)
 	- Ground Material's Drag
 
+#### How to configure the driver's first person view
+
+Create a GameObject in the vehicle at the approximate position of the first person view.
+
+Add these components:
+
+- Rigidbody, mass = 0.5
+- Configurable Joint, configure the parameters as follows:
+
+![Configurable Joint for the driver's first person view](/img/driver-view-configurable-joint-parameters.png)
+
 ## Problem resolution
 
 #### The car jumps uncontrollably or shakes at rest
