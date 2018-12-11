@@ -122,7 +122,7 @@ Acceleration
 	- Tire Friction transmits up to Max Drive Force to the wheels
 	- Aided by Traction Control
 
-Burnouts
+Burnouts / Drifting / Powersliding
 :	- Max Drive Force
 	- Max Drive Slip
 	- Drive Force To Max Slip
