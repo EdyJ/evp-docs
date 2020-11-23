@@ -7,7 +7,7 @@
 fun vehicles to your games in [Unity 3D](http://unity3d.com)! Designed for gameplay, ease of use,
 and realistic behavior.
 
-Stay tunned! Follow **[@VehiclePhysics](https://twitter.com/VehiclePhysics)** on Twitter for the
+Stay tuned! Follow **[@VehiclePhysics](https://twitter.com/VehiclePhysics)** on Twitter for the
 latest news and announcements.
 
 ---
