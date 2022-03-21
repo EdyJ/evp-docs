@@ -1,10 +1,11 @@
 # FAQ / How To
 
-I'd better name this section "FAQ / OAC", including the Once Asked Questions. When I receive a
-question that requires a detailed answer, I post it here as well so there's no need for asking /
-answering the same question again :)
-
 [TOC]
+
+#### How to create a vehicle from scratch?
+
+Check out the video:
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=8stasJIfx6I" frameborder="0" allowfullscreen></iframe>
 
 #### How to configure the Input parameters
 
