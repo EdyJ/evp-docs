@@ -1,7 +1,6 @@
 site_name: Edy's Vehicle Physics
 site_description: Documentation for Edy's Vehicle Physics (EVP), an easy to use vehicle physics package for Unity 3D
 site_author: Angel "Edy" Garcia
-repo_url: https://github.com/EdyJ/evp-docs
 
 strict: true
 google_analytics: [ 'UA-58719504-2', 'auto' ]
