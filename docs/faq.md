@@ -5,7 +5,7 @@
 #### How to create a vehicle from scratch?
 
 Check out the video:
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=8stasJIfx6I" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8stasJIfx6I" frameborder="0" allowfullscreen></iframe>
 
 #### How to configure the Input parameters
 
